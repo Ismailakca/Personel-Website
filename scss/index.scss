@@ -1,0 +1,111 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    @include mq('large'){
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__title{
+      color: #000;
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 2.5px;
+      span{
+        color: rgba(0,0,0,.8);
+        margin-left: 5px;
+      }
+    }
+    &__main{
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: .5px;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      .html{
+        color: #ff7f00;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+      .css{
+        color: #660099;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+      .js{
+        color: #ffff00;
+        cursor: pointer;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+      .vue{
+        color: #003399;
+        cursor: pointer;
+      }
+    }
+    &__referans{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: #171515;
+      .github{
+        a{
+          color: #171515;
+          font-weight: bold;
+        }
+      }
+    }
+    &__proje{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    &__list{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      &-item{
+        &:not(:last-child){
+          margin-right: 10px;
+        }
+        width: 35px;
+        height: 35px;
+        background-color: #495057;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .mail{
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400,700;&display=swap');
+
+*,*::after,*::before{
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Mulish',sans-serif;
+  box-sizing: border-box;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #fff;
+}
